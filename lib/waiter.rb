@@ -22,4 +22,8 @@ class Waiter
     end
   end
 
+  def best_tipper
+    meals.tip.sort[-1].customer
+  end
+
 end
