@@ -1,3 +1,5 @@
+require 'pry'
+
 class Waiter
   attr_accessor :name, :years
   @@all = []
@@ -24,6 +26,7 @@ class Waiter
 
   def best_tipper
     meals.to_h
+    binding.pry
   end
 
     # tip_array = []
