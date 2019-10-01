@@ -25,7 +25,9 @@ class Waiter
   end
 
   def best_tipper
-    meals
+    tip_array = []
+    meals.map do |meal|
+    tip_array << meal.tip
     binding.pry
   end
 
