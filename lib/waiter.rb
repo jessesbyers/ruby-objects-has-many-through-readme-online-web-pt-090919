@@ -28,13 +28,13 @@ class Waiter
     meals.find_max do |meal|
     meal.tip
     end
+  end
     # meals.map.select do |meal|
     #   if meal.tip == best_tip
     #      meal.customer
     #    end
     # end
 
-  end
 
     # tip_array = []
     # meals.map do |meal|
