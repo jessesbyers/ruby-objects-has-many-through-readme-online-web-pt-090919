@@ -28,6 +28,7 @@ class Waiter
       tip_array << meal.tip
     end
     tip_array.sort
+    Meal.all
     # meals.tip.sort.delete_at(-1).customer
   end
 
