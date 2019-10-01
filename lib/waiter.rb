@@ -30,6 +30,7 @@ class Waiter
     tip_array << meal.tip
     binding.pry
   end
+  end
 
     # tip_array = []
     # meals.map do |meal|
