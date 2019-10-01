@@ -35,7 +35,6 @@ class Waiter
       if meal.tip == best_tip
          meal.customer
        end
-       binding.pry
     end
 
   end
