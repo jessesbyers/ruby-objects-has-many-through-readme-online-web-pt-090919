@@ -8,7 +8,10 @@ class Customer
     @@all << self
   end
 
-  def self.all 
+  def self.all
     @@all
+  end
+
+  def new_meal
   end
 end
