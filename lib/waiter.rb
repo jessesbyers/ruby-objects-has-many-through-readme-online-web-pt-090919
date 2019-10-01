@@ -32,9 +32,10 @@ class Waiter
     end
     best_tip = tip_array.sort[-1]
     meals.map.select do |meal|
-      meal.tip == best_tip
-      meal.customer
+      if meal.tip == best_tip
+         best_tipper = meal.customer
     end
+    best_tipper
 
   end
 
