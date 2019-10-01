@@ -30,7 +30,12 @@ class Waiter
     tip_array << meal.tip
     binding.pry
     end
-    tip_array.sort
+    best_tip = tip_array.sort[-1]
+    meals.map.select do |meal|
+      meal.tip == best_tip
+      meal.customer
+    end
+
   end
 
     # tip_array = []
