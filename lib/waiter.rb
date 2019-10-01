@@ -1,5 +1,3 @@
-require 'pry'
-
 class Waiter
   attr_accessor :name, :years
   @@all = []
@@ -30,28 +28,4 @@ class Waiter
     end
     best_tipped_meal.customer
   end
-
-    # tip_array = []
-    # meals.map do |meal|
-    # tip_array << meal.tip
-    # tip_array.sort
-    # end
-    # binding.pry
-    # meals.map.select do |meal|
-    #   if meal.tip == best_tip
-    #      meal.customer
-    #    end
-    # end
-
-
-    # tip_array = []
-    # meals.map do |meal|
-    #   tip_array << meal.tip
-    # end
-    # tip_array.sort
-    # Meal.all
-    # # meals.tip.sort.delete_at(-1).customer
-
-
-
 end
