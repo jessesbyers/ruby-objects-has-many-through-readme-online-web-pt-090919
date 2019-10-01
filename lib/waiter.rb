@@ -23,7 +23,12 @@ class Waiter
   end
 
   def best_tipper
-    meals.tip.sort.delete_at(-1).customer
+    tip_array = []
+    meals.map do |meal|
+      tip_array << meal.customer
+    end
+    tip_array
+    # meals.tip.sort.delete_at(-1).customer
   end
 
 
