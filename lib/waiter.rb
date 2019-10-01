@@ -25,7 +25,7 @@ class Waiter
   end
 
   def best_tipper
-    meals.to_h
+    meals
     binding.pry
   end
 
