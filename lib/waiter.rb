@@ -34,6 +34,7 @@ class Waiter
     meals.map.select do |meal|
       if meal.tip == best_tip
          best_tipper = meal.customer
+       end
     end
     best_tipper
 
