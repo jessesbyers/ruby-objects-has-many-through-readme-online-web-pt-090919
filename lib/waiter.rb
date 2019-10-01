@@ -25,17 +25,14 @@ class Waiter
   end
 
   def best_tipper
-    tip_array = []
-    meals.map do |meal|
-    tip_array << meal.tip
-    # binding.pry
+    meals.find_max do |meal|
+    meal.tip
     end
-    best_tip = tip_array.sort[-1]
-    meals.map.select do |meal|
-      if meal.tip == best_tip
-         meal.customer
-       end
-    end
+    # meals.map.select do |meal|
+    #   if meal.tip == best_tip
+    #      meal.customer
+    #    end
+    # end
 
   end
 
